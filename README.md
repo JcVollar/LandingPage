@@ -11,7 +11,7 @@ So this is realy simple, just clone it and change the password in index.php. I'v
 
 ### Installing
 
-This is jusing PHP, so you need a PHP server to make it run.the main html is in the raw.txt file. But there is a edit.html I use for working. When Im done, just copy the html over to the raw.txt file, and publis it. I see the ironi of this as I am writing it. Why dont I just read the edit.html, well ... next time.
+This is using PHP, so you need a PHP server to make it run.the main html is in the raw.txt file. But there is a edit.html I use for working. When Im done, just copy the html over to the raw.txt file, and publis it. I see the ironi of this as I am writing it. Why dont I just read the edit.html, well ... next time.
 
 ## License
 
