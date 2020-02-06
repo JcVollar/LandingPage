@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /tools/
+Disallow: /img2/
+
+Sitemap: https://sjokoladekake.net/sitemap.xml
