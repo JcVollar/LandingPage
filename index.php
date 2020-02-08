@@ -1,5 +1,5 @@
 <?php
-if(isset($_REQUEST['stat']) && $_REQUEST['stat']=="wazzup"){
+if(isset($_REQUEST['stat']) && $_REQUEST['stat']=="changeme"){
 	
 	$event['29.Jan.2020'] = 'Created';
 	$event['30.Jan.2020'] = 'Publised : Facebook - Ledergruppa';
