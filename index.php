@@ -174,7 +174,7 @@ if(isset($_REQUEST['stat']) && $_REQUEST['stat']=="changeMe"){
 
 }else{
 
-	$file = file_get_contents('raw.txt');
+	$file = file_get_contents('raw.html');
 
 	echo $file;
 
