@@ -1,9 +1,10 @@
 <?php
-if(isset($_REQUEST['stat']) && $_REQUEST['stat']=="changeMe"){
+if(isset($_REQUEST['stat']) && $_REQUEST['stat']=="wazzup"){
 	
 	$event['29.Jan.2020'] = 'Created';
 	$event['30.Jan.2020'] = 'Publised : Facebook - Ledergruppa';
 	$event['06.Feb.2020'] = 'Audits: Performance:100%, Accessibility:100%, Best Practices:100%, SEO:100% ';
+	$event['08.Feb.2020'] = 'Published: Hva skjer i Ski?(reach:13,229)';
 	
 	echo '<!doctype html><html class="no-js" lang="no"><head><meta charset="utf-8"><title>Stats</title>
 		<style>

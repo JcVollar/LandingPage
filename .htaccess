@@ -1,6 +1,6 @@
 DirectoryIndex index.html index.shtml index.xhtml index.wml index.perl index.pl index.plx index.ppl index.cgi index.jsp index.js index.jp index.php4 index.php3 index.php index.phtml index.htm home.htm default.htm index.fcgi default.html simpleIndex.php simpleResponse.php 
 
-ErrorDocument 404 /test.php
+ErrorDocument 404 /index.php
 
 # Add this when running on justhost servers
 # AddHandler application/x-httpd-php54 .php
@@ -120,17 +120,16 @@ ErrorDocument 404 /test.php
 
 RewriteEngine On
 
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+</IfModule>
 
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !^.*\.(jpg|css|js|gif|png|html|php)$ [NC]
-RewriteRule ^(.*)$ index.php [L]
-#Options -Indexes
 
-<files Core/FrameWork/settings.ini>
+<files xstats.txt>
   order deny,allow
   deny from all
 </files>
